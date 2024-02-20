@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Красная футболка с принтом | Интернет-магазин Red Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="header__navbar">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="/images/logo.png" alt="лого red store" class="header__logo-img">
+                </a>
+            </div>
+            <nav class="header__menu">
+                <ul id="MenuItems" class="menu__list">
+                    <li class="menu__list-item"><a href="index.html" class="menu-link">Главная</a></li>
+                    <li class="menu__list-item"><a href="products.html" class="menu-link">Каталог</a></li>
+                    <li class="menu__list-item"><a href="#!" class="menu-link">О нас</a></li>
+                    <li class="menu__list-item"><a href="#!" class="menu-link">Контакты</a></li>
+                    <li class="menu__list-item"><a href="account.html" class="menu-link">Аккаунт</a></li>
+                    <li class="menu__list-item">
+                        <a href="cart.html">
+                            <img src="images/cart.png" alt="корзина" class="cart-icon">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" alt="меню" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <div class="small-container grid">
+        <div class="photo-big">
+            <img src="images/gallery-1.jpg" alt="Красная футболка с принтом" class="big-img">
+        </div>
+        <div class="description">
+            <h2 class="product-title">Красная футболка с принтом</h2>
+            <p class="price card-price">500 р.</p>
+            <h3>Описание</h3>
+            <p>Удобная посадка и яркий брендинг — отличительные черты этой крутой футболки от PUMA. Идеальный вариант для повседневного образа в спортивном стиле. Воздухопроницаемый и приятный на ощупь хлопок получен с производств, ориентированных на устойчивое развитие. Модель классического кроя со свободной посадкой. Не то слово, как удобно!</p>
+            <div class="choice">
+                <select>
+                    <option value="1">Выбрать размер</option>
+                    <option value="XXL">XXL</option>
+                    <option value="XL">XL</option>
+                    <option value="L">L</option>
+                    <option value="M">M</option>
+                    <option value="S">S</option>
+                    <option value="XS">XS</option>
+                </select>
+                <input type="number" value="1">
+                <button class="btn card-btn">Добваить в корзину</button>
+            </div>
+        </div>
+        <div class="photo-small-1">
+            <img src="images/gallery-1.jpg" alt="Красная майка с принтом" class="small-img">
+        </div>
+        <div class="photo-small-2">
+            <img src="images/gallery-2.jpg" alt="Красная майка с принтом" class="small-img">
+        </div>
+        <div class="photo-small-3">
+            <img src="images/gallery-3.jpg" alt="Красная майка с принтом" class="small-img">
+        </div>
+        <div class="photo-small-4">
+            <img src="images/gallery-4.jpg" alt="Красная майка с принтом" class="small-img">
+        </div>
+    </div>
+    <div class="small-container">
+        <div class="row row-2">
+            <h2 class="row-2__title">Сопутствующие товары</h2>
+        </div>
+    </div>
+        <section class="recomend">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-4">
+                        <a href="product-details.html">
+                            <img src="images/product-1.jpg" alt="Красная футболка с принтом">
+                        </a>
+                        <h4 class="name-product">Красная футболка с принтом</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p class="price">500р.</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="product-details.html">
+                            <img src="images/product-2.jpg" alt="Кроссовки беговые">
+                        </a>
+                        <h4 class="name-product">Кроссовки беговые</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p class="price">3550р.</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="product-details.html">
+                            <img src="images/product-3.jpg" alt="Треники серые">
+                        </a>
+                        <h4 class="name-product">Треники серые</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p class="price">1300р.</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="product-details.html">
+                            <img src="images/product-4.jpg" alt="Футболка Puma">
+                        </a>
+                        <h4 class="name-product">Футболка Puma</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p class="price">1550р.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3 class="footer-subtitle">Скачайте приложение</h3>
+                    <p class="footer-text">Скачайте приложение для Android </br> или для IOS</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="google play" class="app-logo-img"></br>
+                        <img src="images/app-store.png" alt="app store" class="app-logo-img">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="/images/logo-white.png" alt="логотип" class="footer-logo">
+                    <p class="footer-text">Выведите ваши тренеровки на новый уровень, </br> а мы поможем с экипировкой.</p>
+                </div>
+                <div class="footer-col-3-4">
+                    <h3 class="footer-subtitle">Полезные ссылки</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">Купоны</li>
+                        <li class="footer__list-item">Блог</li>
+                        <li class="footer__list-item">Политика ИБ</li>
+                        <li class="footer__list-item">Контакты</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3-4">
+                    <h3 class="footer-subtitle">Подпишитесь</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">VKontakte</li>
+                        <li class="footer__list-item">Telegramm</li>
+                        <li class="footer__list-item">WhatsApp</li>
+                        <li class="footer__list-item">YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - RedStore</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина | Интернет-магазин Red Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="header__navbar">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="логотип red store" class="header__logo-img">
+                </a>
+            </div>
+            <nav class="header__menu">
+                <ul id="MenuItems" class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="index.html" class="menu-link">Главная</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="products.html" class="menu-link">Каталог</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#!" class="menu-link">О нас</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#!" class="menu-link">Контакты</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="account.html" class="menu-link">Аккаунт</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="cart.html">
+                            <img src="images/cart.png" alt="корзина" class="cart-icon">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" alt="меню" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <div class="container">
+           <h2 class="subtitle">Корзина</h2>
+        <section class="section-cart">
+            <div class="section-cart__body">
+                <div class="cart-header">
+                    <h3 class="cart-header__title">наименование</h3>
+                    <h3 class="cart-header__count">количество</h3>
+                    <h3 class="cart-header__cost">стоимость</h3>
+                </div>
+                <div class="product">
+                    <div class="product__img"><img src="images/buy-1.jpg" alt=""></div>
+                    <div class="product__title">Красная футболка с принтом</div>
+                    <div class="product__count">
+                      <input type="number" class="count__input" min="1" max="100" value="1">
+                    </div>
+                    <div class="product__price">500 р.</div>
+                    <div class="product__controls">
+                        <img src="images/cross.svg" alt="Delete">
+                    </div>
+                </div>
+                <div class="product">
+                        <div class="product__img"><img src="images/buy-2.jpg" alt=""></div>
+                        <div class="product__title">Кроссовки беговые</div>
+                        <div class="product__count">
+                            <div class="count">
+                               
+                                    <input type="number" class="count__input" min="1" max="100" value="1">
+                                
+                            </div>
+                        </div>
+                        <div class="product__price">5000р.</div>
+                        <div class="product__controls">
+                           
+                                <img src="images/cross.svg" alt="Delete">
+                          
+                        </div>
+                </div>
+                <div class="product">
+                        <div class="product__img"><img src="images/buy-3.jpg" alt=""></div>
+                        <div class="product__title">Треники серые</div>
+                        <div class="product__count">
+                            <div class="count">
+                              <input type="number" class="count__input" min="1" max="100" value="1">
+                            </div>
+                        </div>
+                        <div class="product__price">1300р.</div>
+                        <div class="product__controls">
+                            <img src="images/cross.svg" alt="Delete">
+                        </div>
+                </div>
+            </div>    
+            <div class="cart-footer">
+                <p class="cart-footer__price">Итоговая сумма заказа 6800 р.</p>
+                <a href="#" class="btn btn-card">Оформить заказ</a>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3 class="footer-subtitle">Скачайте приложение</h3>
+                    <p class="footer-text">Скачайте приложение для Android </br> или для IOS</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="google play" class="app-logo-img"></br>
+                        <img src="images/app-store.png" alt="app store" class="app-logo-img">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="логотип" class="footer-logo">
+                    <p class="footer-text">Выведите ваши тренеровки на новый уровень, </br> а мы поможем с экипировкой.</p>
+                </div>
+                <div class="footer-col-3-4">
+                    <h3 class="footer-subtitle">Полезные ссылки</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">Купоны</li>
+                        <li class="footer__list-item">Блог</li>
+                        <li class="footer__list-item">Политика ИБ</li>
+                        <li class="footer__list-item">Контакты</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3-4">
+                    <h3 class="footer-subtitle">Подпишитесь</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">VKontakte</li>
+                        <li class="footer__list-item">Telegramm</li>
+                        <li class="footer__list-item">WhatsApp</li>
+                        <li class="footer__list-item">YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - RedStore</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

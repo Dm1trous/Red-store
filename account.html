@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аккаунт | Интернет-магазин Red Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__navbar">
+                <div class="header__logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="лого red store" class="header__logo-img">
+                    </a>
+                </div>
+                <nav class="header__menu">
+                    <ul id="MenuItems" class="menu__list">
+                        <li class="menu__list-item"><a href="index.html" class="menu-link">Главная</a></li>
+                        <li class="menu__list-item"><a href="products.html" class="menu-link">Каталог</a></li>
+                        <li class="menu__list-item"><a href="#!" class="menu-link">О нас</a></li>
+                        <li class="menu__list-item"><a href="#!" class="menu-link">Контакты</a></li>
+                        <li class="menu__list-item"><a href="account.html" class="menu-link">Аккаунт</a></li>
+                        <li class="menu__list-item">
+                            <a href="cart.html">
+                                <img src="images/cart.png" alt="корзина" class="cart-icon">
+                        </a>
+                        </li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" alt="меню" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </header>
+    <section class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 width">
+                    <img src="images/image1.png" alt="спортсмены, один на коленях, другой в полете, рядом мяч футбольный" class="img-form">
+                </div>
+                    <div class="col-2 width2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span onclick="login()">Авторизация</span>
+                                <span onclick="register">Регистрация</span>
+                            </div>
+                            <img src="images/login.png" alt="Авторизация" class="form-btn-img">
+                            <form action="#" id="LoginForm">
+                                <input type="text" placeholder="Логин" required>
+                                <input type="password" placeholder="Пароль" required>
+                                <button type="submit" class="btn">Войти</button>
+                                <a href="#!">Забыли пароль?</a>
+                            </form>
+                            <form action="#" id="RegForm">
+                                <input type="text" placeholder="Логин/имя" required>
+                                <input type="email" placeholder="Email" required>
+                                <input type="password" placeholder="Пароль" required>
+                                <button type="submit" class="btn">Зарегистрироваться</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3 class="footer-subtitle">Скачайте приложение</h3>
+                    <p class="footer-text">Скачайте приложение для Android </br> или для IOS</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="google play" class="app-logo-img"></br>
+                        <img src="images/app-store.png" alt="app store" class="app-logo-img">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="логотип" class="footer-logo">
+                    <p class="footer-text">Выведите ваши тренеровки на новый уровень, </br> а мы поможем с экипировкой.</p>
+                </div>
+                <div class="footer-col-3-4">
+                    <h3 class="footer-subtitle">Полезные ссылки</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">Купоны</li>
+                        <li class="footer__list-item">Блог</li>
+                        <li class="footer__list-item">Политика ИБ</li>
+                        <li class="footer__list-item">Контакты</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3-4">
+                    <h3 class="footer-subtitle">Подпишитесь</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">VKontakte</li>
+                        <li class="footer__list-item">Telegramm</li>
+                        <li class="footer__list-item">WhatsApp</li>
+                        <li class="footer__list-item">YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - RedStore</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
